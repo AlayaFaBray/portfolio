@@ -6,12 +6,14 @@ body {
     background: #efefef;
 }
 .btn {
-    background-colour: #efefef;
+    background-color: #efefef;
     border: none;
     border-radius: 25px;
     color: #424242;
     box-shadow: -6px -6px 10px #f9f9f9,
                 6px 6px 10px #00000026;
+    cursor: pointer;
+    padding: 10px;
 }
 
 .btn hover {
