@@ -1,17 +1,35 @@
 h1 {
-    color: black;
+  color: black;
 }
 
 body {
-    background: #efefef;
+  background: #efefef;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 150;
+  font-style: normal;
+}
+
+.page-header-title {
+  font-style: italic;
+}
+
 .btn {
-    background-color: #efefef;
-    border: none;
-    border-radius: 25px;
-    color: #424242;
-    box-shadow: -6px -6px 10px #f9f9f9,
-                6px 6px 10px #00000026;
-    cursor: pointer;
-    padding: 10px;
+  background-color: #efefef;
+  border: none;
+  border-radius: 25px;
+  color: #424242;
+  box-shadow: -6px -6px 10px #f9f9f9, 6px 6px 10px #00000026;
+  cursor: pointer;
+  padding: 10px;
 }
