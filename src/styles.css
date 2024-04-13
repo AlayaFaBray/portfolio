@@ -7,6 +7,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
+
+  background: linear-gradient(to right, rgb(191, 203, 191), rgb(166, 179, 237));
+}
+
+h1 {
+    font-size: 3em;
 }
 
 h1,
@@ -21,82 +28,88 @@ h6 {
 }
 
 ul {
-    padding: 0;
+  padding: 0;
+}
+
+a {
+  color: rgba(57, 5, 70, 0.888);
 }
 
 .page-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    width: 100%;
-}
-
-.page-header-title {
-  font-style: italic;
+  width: 100%;
 }
 
 .page-nav {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .page-nav-list {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    list-style: none;
+  list-style: none;
 }
 
 .page-nav-list-item {
-    padding: 0 5px;
+  padding: 0 5px;
 
-    border-right: 1px solid;
+  border-right: 1px solid;
 }
 
 .page-nav-list-item a {
-    text-decoration: none;
+  text-decoration: none;
+  color: #424242;
 }
 
 .page-nav-list-item a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .page-nav-list-item:last-child {
-    border-right: 0;
+  border-right: 0;
 }
 
 .page-content {
-    min-width: 900px;
+  min-width: 900px;
 
-    border-top: 1px solid;
+  border-top: 1px solid;
 }
 
 .page-content-header {
-    text-align: center;
+  text-align: center;
 }
 
-
 .page-footer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    border-top: 1px solid;
+  border-top: 1px solid;
+  background: rgb(49, 54, 68);
+}
+
+.page-footer,
+.page-footer a {
+  color: rgb(158, 158, 185);
 }
 
 .social-links {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    list-style: none;
+  list-style: none;
 }
 
 .social-link-icon {
-    width: 30px;
-    height: 30px;
-    padding: 5px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
 }
 
 .btn {
@@ -110,22 +123,24 @@ ul {
 }
 
 .blog-content-list {
-    list-style: none;
-
+  list-style: none;
 }
 
 .blog-content-item-header {
-    text-align: center;
+  text-align: center;
+  margin-bottom: 3px;
 }
 
 .blog-content-item-header a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .blog-content-item-header a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .blog-content-item-publish-date {
-    text-align: center;
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 0;
 }
