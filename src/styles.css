@@ -1,3 +1,11 @@
+/*
+page styles
+*/
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #efefef;
   font-family: "Dosis", sans-serif;
@@ -19,7 +27,6 @@ h1 {
 
 h2 {
   font-size: 2em;
-  color: white;
 }
 
 h1,
@@ -40,6 +47,10 @@ ul {
 a {
   color: rgba(57, 5, 70, 0.888);
 }
+
+/*
+page header styles
+*/
 
 .page-header {
   display: flex;
@@ -80,6 +91,10 @@ a {
   border-right: 0;
 }
 
+/*
+page content styles
+*/
+
 .page-content {
   flex-grow: 1;
   width: 800px;
@@ -90,6 +105,10 @@ a {
 .page-content-title {
   text-align: center;
 }
+
+/*
+page footer styles
+*/
 
 .page-footer {
   width: 100%;
@@ -119,17 +138,9 @@ a {
   padding: 5px;
 }
 
-.btn {
-  display: flex;
-  background-color: #efefef;
-  border: none;
-  border-radius: 25px;
-  color: #424242;
-  box-shadow: -3px -3px 5px #f9f9f9, 6px 6px 10px #00000026;
-  cursor: pointer;
-  padding: 10px;
-  margin: 15px;
-}
+/*
+blog styles
+*/
 
 .blog-summary-list {
   list-style: none;
@@ -154,13 +165,61 @@ a {
   margin-top: 0;
 }
 
-.contact-info-details {
-  display: flex;
-}
-
 .blog-content-item-header {
   height: 200px;
   background-size: cover;
   padding-top: 40px;
   text-align: center;
+  color: white;
+}
+
+/*
+contact styles
+*/
+
+.contact-info-details {
+  display: flex;
+}
+
+/*
+portfolio styles
+*/
+
+.portfolio-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*
+mobile styles
+*/
+
+@media (max-width: 800px) {
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+
+  .page-nav-list {
+    flex-direction: column;
+  }
+
+  .page-nav-list-item {
+    border-right: none;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+
+  .page-content {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+
+  .portfolio-content {
+    flex-direction: column;
+  }
 }
